@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form HTML/CSS</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 
 <body>
     <header>
@@ -14,7 +14,7 @@
     </header>
 
     <main>
-        <form>
+        <form onsubmit="return false">
             <label for="name">Name</label>
             <input type="text" placeholder="Enter your name" name="name" id="name">
             <label for="email">Email</label>
@@ -30,20 +30,25 @@
                 <option value="desperate for life">Desperate for life</option>
                 <option value="Others">Others</option>
             </select>
-            <label for="recommend">Would to recommend this site?</label>
-            <input type="radio" name="recommend" id="recommend-yes" value="yes"><label for="recommend-yes">Yes</label>
-            <input type="radio" name="recommend" id="recommend-no" value="no"><label for="recommend-no">No</label>
-            <input type="radio" name="recommend" id="recommend-maybe" value="maybe"><label for="recommend-maybe">Maybe</label>
-            <label for="language">Language and Frameworks known</label>
-            <input type="checkbox" name="html" id="html" value="html"><label for="html">HTML</label> 
-            <input type="checkbox" name="css" id="css" value="css"><label for="css">CSS</label> 
-            <input type="checkbox" name="javaScript" id="javaScript" value="javaScript"><label for="javaScript">javaScript</label> 
-            <input type="checkbox" name="laravel" id="laravel" value="laravel"><label for="laravel">laravel</label> 
-            <input type="checkbox" name="php" id="php" value="php" class="ultimo-input"><label for="php">PHP</label>
-            <input type="submit" name="submit" id="submit" value="submit">
+            <fieldset>
+                <p>Would to recommend this site?</p>
+                <input type="radio" name="recommend" id="recommend-yes" value="yes"><label for="recommend-yes">Yes</label>
+                <input type="radio" name="recommend" id="recommend-no" value="no"><label for="recommend-no">No</label>
+                <input type="radio" name="recommend" id="recommend-maybe" value="maybe"><label
+                    for="recommend-maybe">Maybe</label>
+            </fieldset>
+            <fieldset>
+                <p>Language and Frameworks known</p>
+                <input type="checkbox" name="language" id="html" value="html"><label for="html">HTML</label>
+                <input type="checkbox" name="language" id="css" value="css"><label for="css">CSS</label>
+                <input type="checkbox" name="language" id="javaScript" value="javaScript"><label for="javaScript">javaScript</label>
+                <input type="checkbox" name="language" id="laravel" value="laravel"><label for="laravel">laravel</label>
+                <input type="checkbox" name="language" id="php" value="php" class="ultimo-input"><label for="php">PHP</label>
+            </fieldset>
+            <input type="submit" name="submit" id="submit" value="submit" onclick="mostrarDatosRecogidos();">
         </form>
     </main>
-
+<script src="./assets/js/app.js"></script>
 </body>
 
 </html>

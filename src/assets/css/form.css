@@ -1,0 +1,65 @@
+form {
+    display: block;
+    width: 800PX;
+    padding: 16px;
+    margin: 0 auto;
+    background: white;
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+fieldset {
+    margin:0 0 16px 0;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+label,
+input,
+select {
+    display: block;
+}
+
+input,
+select {
+    margin: 0 0 16px 0;
+    border: 1px solid #000;
+    padding: 3px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 0 9px 0 0;
+}
+
+input[type="radio"],
+input[type="radio"] + label,
+input[type="checkbox"],
+input[type="checkbox"] + label {
+    display: inline;
+}
+
+input[type="radio"] + label::after,
+input[type="checkbox"] + label::after {
+    content: '\A';
+    white-space: pre;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    background: green;
+    font-size: 2em;
+    font-weight: bold;
+    transition: all 0.4s;
+}
+
+input[type="submit"]:hover {
+    background: white;
+    letter-spacing: 3px;
+}
