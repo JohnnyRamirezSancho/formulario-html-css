@@ -22,17 +22,6 @@ function mostrarDatosRecogidos() {
     }
     console.log(`Recommend: ${recomendado}`);
 
-/*
-    const language = document.getElementsByName("language");
-    let elementos = "";
-    language.forEach(elemento => {
-        console.log(elemento);
-        if(elemento.checked){
-            elementos = elemento.value; 
-        }       
-    });
-    console.log (elementos);
-*/
     const languages = document.querySelectorAll('input:checked');
     let lenguajes = "";
     let contador = 1;
@@ -44,4 +33,8 @@ function mostrarDatosRecogidos() {
         contador++;
     });
     console.log(`Lenguajes: ${lenguajes}`);
+
+    const comments = document.getElementById("comments");
+    const comment = comments.value;
+    console.log(`Comments: ${comment}`);
 }
